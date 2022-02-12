@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>HTML Academy: Седона/Каталог</title>
 </head>
 <body>
   <header class="main-header">
-    <img class="logo" src="" alt="Логотип сайта Седона">
+    <a href="index.html"><img class="logo" src="" alt="Логотип сайта Седона"></a>
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -33,7 +33,7 @@
           </a>
         </li>
         <li>
-          <button class="button" type="submit">ХОЧУ СЮДА!</button>
+          <a href="catalog.html"><button>ХОЧУ СЮДА!</button></a>
         </li>
       </ul>
     </nav>
@@ -97,25 +97,15 @@
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <ul class="catalog-filter-list-slider">
-              <li class="catalog-filter-item">
+            <section class="catalog-filter-list-slider">
                 <span class="first-price">от</span>
-                <input class="price-form" type="text" value="0">
-              </li>
-              <li class="catalog-filter-item">
+                <input class="price-form" type="number" value="0">
                 <span>до</span>
-                <input class="price-form" type="text" value="9000">
-              </li>
-              <li>
+                <input class="price-form" type="number" value="9000">
                 <input class="slider" type="range" min="0" max="9000" value="7000" id="catalog-filter-list-slider">
-              </li>
-              <li>
                 <button class="button" type="submit">применить</button>
-              </li>
-              <li>
                 <button class="button" type="reset">сбросить</button>
-              </li>
-            </ul>
+            </section>
           </fieldset>
         </form>
       </section>
@@ -160,15 +150,9 @@
             </a>
             <b class="product-card-type">Гостиница</b>
             <b class="product-card-price">От 3000 ₽</b>
-            <div class="product-card-rating">
-              <b class="rating-title">Рейтинг: 8,9</b>
-            </div>
-            <form action="#">
-              <button class="button" type="submit">Подробнее</button>
-              </form>
-            <form action="#">
+            <b class="product-card-rating-title">Рейтинг: 8,9</b>
+              <a href=""><button class="button" type="submit">Подробнее</button></a>
               <button class="button" type="submit">В Избранное</button>
-              </form>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -177,15 +161,9 @@
             </a>
             <b class="product-card-type">Гостиница</b>
             <b class="product-card-price">От 2000 ₽</b>
-            <div class="product-card-rating">
-              <b class="rating-title">Рейтинг: 9,2</b>
-            </div>
-            <form action="#">
-              <button class="button" type="submit">Подробнее</button>
-              </form>
-            <form action="#">
+              <b class="product-card-rating-title">Рейтинг: 9,2</b>
+              <a href=""><button class="button" type="submit">Подробнее</button></a>
               <button class="button" type="submit">В Избранном</button>
-              </form>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -194,15 +172,9 @@
             </a>
             <b class="product-card-type">Гостиница</b>
             <b class="product-card-price">От 3000 ₽</b>
-            <div class="product-card-rating">
-              <b class="rating-title">Рейтинг: 9,2</b>
-            </div>
-            <form action="#">
-              <button class="button" type="submit">Подробнее</button>
-              </form>
-            <form action="#">
+              <a href=""><b class="rating-title">Рейтинг: 9,2</b></a>
+              <a href=""><button class="button" type="submit">Подробнее</button></a>
               <button class="button" type="submit">В Избранное</button>
-              </form>
           </li>
         </ul>
         <button class="button pagination-load-more" type="button">Загрузить еще</button>
@@ -264,7 +236,7 @@
           </a>
         </li>
       </ul>
-      <a class="footer-contacts-phone" href="tel:+78128121212"><h2>+7 (812) 812-12-12</h2></a>
+      <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a href="https://htmlacademy.ru">
         <img src="" alt="Логотип htmlacademy">
       </a>
